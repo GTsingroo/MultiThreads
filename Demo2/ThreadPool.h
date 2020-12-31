@@ -5,7 +5,6 @@
 #include <iostream>
 #include <condition_variable>
 
-//#include <memory> //unique_ptr
 const int MAX_THREADS = 100;
 
 template<typename T>
