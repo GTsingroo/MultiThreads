@@ -56,6 +56,18 @@ public:
 			m_cond.notify_one();// wake a thread to to the task
 		}
 	}
+
+	/**
+	 * \brief 判断任务序列是否为空
+	 * \return 
+	 */
+	bool isEmpty()
+	{
+		if (!m_tasks.empty())
+			return false;
+		return true;
+	}
+
 private:
 	void run()
 	{
